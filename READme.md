@@ -1,6 +1,6 @@
 Kazoo Kid AR - Augmented Reality Application
 
-Live Demo: https://bavode.github.io/DIL-OP2-BavoDeBondt/
+Live Demo: https://gdmgent-digitalproductstudio.github.io/dil-op2-mind-ar-Bavodb/
 
 Concept
 Dit project combineert twee AR technologieën. Face tracking plaatst een virtuele kazoo op je mond die beweegt en geluid maakt. Image tracking scant instrumentafbeeldingen en toont 3D modellen in AR en speelt ook het bijpassende geluid af. Het thema is geïnspireerd door de Kazoo Kid meme en Frederick Roegiers zijn prachtige kinder foto .
