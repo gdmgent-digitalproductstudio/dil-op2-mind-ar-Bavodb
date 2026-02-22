@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Home */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fef6e4;
+  overflow: auto;
+  position: relative;
+}
+
+.home-background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.home-container {
+  text-align: center;
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  max-width: 25rem;
+  width: 90%;
+  opacity: 0.85;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.home-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background: #f77f00;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.home-btn:hover {
+  background: #d56d00;
+}
+
+.home-btn:active {
+  background: #b35c00;
+}
+
+/* Face Tracking */
+
+.buttons-left {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 10;
+}
+
+.buttons-right {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.buttons-right button {
+  min-width: 10rem;
+}
+
+button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #f77f00;
+  color: white;
+  font-size: 1rem;
+  
+}
+
+button:hover {
+  background: #d56d00;
+}
+
+button:active {
+  background: #b35c00;
+}
+
+#videoContainer {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 13.75rem;
+  display: none;
+  z-index: 10;
+}
+
+#videoContainer video {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+a-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

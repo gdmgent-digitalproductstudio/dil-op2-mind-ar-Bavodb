@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+    <script src="scripts/face.js" defer></script>
+  </head>
+  <body>
+    <div class="buttons-left">
+      <button id="backBtn">Back</button>
+    </div>
+
+    <div class="buttons-right">
+      <button id="toggleKazooBtn">Kazoo: ON</button>
+      <button id="toggleHairBtn">Hair: ON</button>
+      <button id="playKazooBtn">Play the Kazoo</button>
+    </div>
+
+    <audio id="kazooSound" src="assets/audio/KazooSound.wav"></audio>
+
+    <a-scene
+      mindar-face
+      embedded
+      color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights"
+      vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false"
+    >
+      <a-camera active="false" position="0 0 0"></a-camera>
+
+      <a-entity id="kazooEntity" mindar-face-target="anchorIndex: 13">
+        <a-gltf-model
+          id="kazoo"
+          src="assets/3dmodels/Kazoo.glb"
+          scale="2 2 2"
+          position="0.2 -0.09 0"
+          rotation="10 50 0"
+        >
+        </a-gltf-model>
+      </a-entity>
+
+      <a-entity mindar-face-target="anchorIndex: 1">
+        <a-gltf-model
+          id="hair"
+          src="assets/3dmodels/hair.glb"
+          scale="6 6 6"
+          position="0 -9.5 -1"
+          rotation="0 0 0"
+        >
+        </a-gltf-model>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
